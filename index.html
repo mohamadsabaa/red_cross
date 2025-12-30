@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Greenhouse</title>
+
+  <style>
+    body{font-family:Arial;text-align:center;margin:10px;}
+    .container{display:flex;flex-wrap:wrap;justify-content:center;}
+    .card{border:1px solid #ccc;border-radius:8px;padding:15px;margin:10px;width:120px;}
+    .button{padding:5px 10px;margin:3px;border:none;border-radius:5px;cursor:pointer;}
+    .on{background-color:#4CAF50;color:white;}
+    .off{background-color:#f44336;color:white;}
+  </style>
+</head>
+<body>
+
+  <h2>Mini Greenhouse Controller</h2>
+  <p>Mode: <span id="mode">Automatic</span></p>
+  <button onclick="toggleMode()">Toggle Auto/Manual</button>
+
+  <h3>Manual Controls</h3>
+  <div class="container">
+
+    <div class="card">
+      <p>Fan</p>
+      <button class="button on" onclick="toggleState('fan')">ON</button>
+      <button class="button off" onclick="toggleState('fan')">OFF</button>
+      <p>Current: <span id="fanState">OFF</span></p>
+    </div>
+
+    <div class="card">
+      <p>Humidifier</p>
+      <button class="button on" onclick="toggleState('hum')">ON</button>
+      <button class="button off" onclick="toggleState('hum')">OFF</button>
+      <p>Current: <span id="humState">OFF</span></p>
+    </div>
+
+    <div class="card">
+      <p>UV LED</p>
+      <button class="button on" onclick="toggleState('uv')">ON</button>
+      <button class="button off" onclick="toggleState('uv')">OFF</button>
+      <p>Current: <span id="uvState">OFF</span></p>
+    </div>
+
+    <div class="card">
+      <p>Pump</p>
+      <button class="button on" onclick="toggleState('pump')">ON</button>
+      <button class="button off" onclick="toggleState('pump')">OFF</button>
+      <p>Current: <span id="pumpState">OFF</span></p>
+    </div>
+
+  </div>
+
+  <script>
+    let autoMode = true;
+
+    function toggleMode() {
+      autoMode = !autoMode;
+      document.getElementById("mode").innerText = autoMode ? "Automatic" : "Manual";
+    }
+
+    let states = {
+      fan: false,
+      hum: false,
+      uv: false,
+      pump: false
+    };
+
+    function toggleState(device) {
+      states[device] = !states[device];
+      document.getElementById(device + "State").innerText =
+        states[device] ? "ON" : "OFF";
+    }
+  </script>
+
+</body>
+</html>
