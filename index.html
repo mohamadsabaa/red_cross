@@ -1,78 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini Greenhouse</title>
-
-  <style>
-    body{font-family:Arial;text-align:center;margin:10px;}
-    .container{display:flex;flex-wrap:wrap;justify-content:center;}
-    .card{border:1px solid #ccc;border-radius:8px;padding:15px;margin:10px;width:120px;}
-    .button{padding:5px 10px;margin:3px;border:none;border-radius:5px;cursor:pointer;}
-    .on{background-color:#4CAF50;color:white;}
-    .off{background-color:#f44336;color:white;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lebanese Red Cross - Disaster Management Team</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #d32f2f; /* red background */
+        color: white; /* white text for headings */
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    h1, h2 {
+        margin-bottom: 20px;
+    }
+    img {
+        max-width: 150px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+    table {
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #f5f5f5; /* light grey/white table */
+        color: black; /* black text in table */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    th, td {
+        padding: 12px 20px;
+        text-align: left;
+    }
+    th {
+        background-color: #e0e0e0; /* slightly darker header */
+    }
+    tr:nth-child(even) {
+        background-color: #ffffff; /* alternate white rows */
+    }
+</style>
 </head>
 <body>
 
-  <h2>Mini Greenhouse Controller</h2>
-  <p>Mode: <span id="mode">Automatic</span></p>
-  <button onclick="toggleMode()">Toggle Auto/Manual</button>
+<h1>Lebanese Red Cross</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFZaKgL2Wy9rQiNYrsG8LSUQ6Qy6vX47HAJg&s" alt="Red Cross Logo">
+<h2>Disaster Management Team</h2>
 
-  <h3>Manual Controls</h3>
-  <div class="container">
-
-    <div class="card">
-      <p>Fan</p>
-      <button class="button on" onclick="toggleState('fan')">ON</button>
-      <button class="button off" onclick="toggleState('fan')">OFF</button>
-      <p>Current: <span id="fanState">OFF</span></p>
-    </div>
-
-    <div class="card">
-      <p>Humidifier</p>
-      <button class="button on" onclick="toggleState('hum')">ON</button>
-      <button class="button off" onclick="toggleState('hum')">OFF</button>
-      <p>Current: <span id="humState">OFF</span></p>
-    </div>
-
-    <div class="card">
-      <p>UV LED</p>
-      <button class="button on" onclick="toggleState('uv')">ON</button>
-      <button class="button off" onclick="toggleState('uv')">OFF</button>
-      <p>Current: <span id="uvState">OFF</span></p>
-    </div>
-
-    <div class="card">
-      <p>Pump</p>
-      <button class="button on" onclick="toggleState('pump')">ON</button>
-      <button class="button off" onclick="toggleState('pump')">OFF</button>
-      <p>Current: <span id="pumpState">OFF</span></p>
-    </div>
-
-  </div>
-
-  <script>
-    let autoMode = true;
-
-    function toggleMode() {
-      autoMode = !autoMode;
-      document.getElementById("mode").innerText = autoMode ? "Automatic" : "Manual";
-    }
-
-    let states = {
-      fan: false,
-      hum: false,
-      uv: false,
-      pump: false
-    };
-
-    function toggleState(device) {
-      states[device] = !states[device];
-      document.getElementById(device + "State").innerText =
-        states[device] ? "ON" : "OFF";
-    }
-  </script>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Member ID</th>
+    </tr>
+    <tr><td>Fadi Khoury</td><td>RCC-10234</td></tr>
+    <tr><td>Lea Nasser</td><td>RCC-10789</td></tr>
+    <tr><td>Omar Tannous</td><td>RCC-11567</td></tr>
+    <tr><td>Sara Hachem</td><td>RCC-12345</td></tr>
+    <tr><td>Rami Daher</td><td>RCC-13021</td></tr>
+    <tr><td>Maya Chamoun</td><td>RCC-14012</td></tr>
+    <tr><td>Jad Farah</td><td>RCC-14567</td></tr>
+    <tr><td>Nadine Saab</td><td>RCC-15034</td></tr>
+    <tr><td>Elie Karam</td><td>RCC-15890</td></tr>
+    <tr><td>Rita Hanna</td><td>RCC-16234</td></tr>
+    <tr><td>Hassan Melhem</td><td>RCC-17012</td></tr>
+    <tr><td>Yara Sleiman</td><td>RCC-17543</td></tr>
+    <tr><td>Samir Khazen</td><td>RCC-18210</td></tr>
+    <tr><td>Leila Tannous</td><td>RCC-19045</td></tr>
+    <tr><td>Amin Boutrous</td><td>RCC-19567</td></tr>
+</table>
 
 </body>
 </html>
