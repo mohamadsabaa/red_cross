@@ -19,28 +19,28 @@
         margin-bottom: 20px;
     }
 
-    /* Container for image + table */
+    /* Layout for table + image */
     .content {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around; /* pushes image slightly inward */
         align-items: flex-start;
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
-    /* Left side table */
+    /* Table styling */
     table {
-        width: 40%;
+        width: 35%;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
         background-color: #f5f5f5;
         color: black;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        text-align: left;
     }
 
     th, td {
         padding: 12px 20px;
+        text-align: center; /* centers names in column */
     }
 
     th {
@@ -56,11 +56,12 @@
         background-color: #f1f1f1;
     }
 
-    /* Right side image */
+    /* Image styling */
     img {
-        max-width: 400px;
-        border-radius: 10px;
-        border: 4px solid white;
+        max-width: 550px; /* bigger image */
+        border-radius: 12px;
+        border: 5px solid white;
+        margin-left: 40px; /* moves image away from far right */
     }
 </style>
 
@@ -134,8 +135,11 @@
     <tr><td>Youssef Al Zein</td></tr>
 
 </table>
- <img src="images/DM_Camp.png" alt="Logo">
+ <!-- Image (center-right position) -->
+    <img src="images/DM_Camp.png" alt="Logo">
+
 </div>
+
 </body>
 </html>
 
