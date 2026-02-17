@@ -16,30 +16,36 @@
     }
 
     h1, h2 {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
-    .content {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        margin-top: 40px;
+    /* Image at top center */
+    img {
+        width: 80%;
+        max-width: 400px;
+        border-radius: 12px;
+        border: 4px solid white;
+        margin: 20px auto;
+        display: block;
     }
 
+    /* Centered narrow table */
     table {
-        width: 50%;
+        width: 85%;
+        max-width: 350px;
+        margin: 0 auto;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
         background-color: #f5f5f5;
         color: black;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
     th, td {
-        padding: 10px;
+        padding: 12px;
         text-align: center;
-        width: 33%;
+        font-size: 16px;
     }
 
     th {
@@ -51,12 +57,8 @@
         background-color: #ffffff;
     }
 
-    img {
-        max-width: 900px;
-        border-radius: 12px;
-        border: 5px solid white;
-        margin-left: 40px;
-        margin-top: 90px;
+    tr:hover {
+        background-color: #f1f1f1;
     }
 </style>
 
@@ -66,117 +68,73 @@
 <h1>Lebanese Red Cross</h1>
 <h2>Disaster Management Team</h2>
 
-<div class="content">
+<!-- Image at top -->
+<img src="images/DM_Camp.png" alt="Logo">
+
 
 <table>
-    <tr>
-        <th colspan="3">Team Members</th>
-    </tr>
 
-    <tr>
-        <td>Abdul Ghani El Bizri</td>
-        <td>Afif Al Baalbaki</td>
-        <td>Ahmad Fneich</td>
-    </tr>
-    <tr>
-        <td>Ahmad Shaaban</td>
-        <td>Ahmad El Hariri</td>
-        <td>Alaa Joumaa</td>
-    </tr>
-    <tr>
-        <td>Ali Jardali</td>
-        <td>Ali Sabbagh</td>
-        <td>Ali Alameh</td>
-    </tr>
-    <tr>
-        <td>Amjad Arkadan</td>
-        <td>Bahaa Shams El Deen</td>
-        <td>Dana Al Halabi</td>
-    </tr>
-    <tr>
-        <td>Ezzeddine Bsat</td>
-        <td>Fadl El Soloh</td>
-        <td>Farah Al Sabbagh</td>
-    </tr>
-    <tr>
-        <td>Fatima Al Mokaddem</td>
-        <td>Fatima Charara</td>
-        <td>Hadi Traboulsi</td>
-    </tr>
-    <tr>
-        <td>Hani Hamade</td>
-        <td>Hasan Fneich</td>
-        <td>Hassan Alloul</td>
-    </tr>
-    <tr>
-        <td>Hussein Berjawi</td>
-        <td>Isam El Bsat</td>
-        <td>Jad Sabeh Ayoun</td>
-    </tr>
-    <tr>
-        <td>Jana Sabeh Ayoun</td>
-        <td>Kholoud Al Makari</td>
-        <td>Mahmoud Daibes</td>
-    </tr>
-    <tr>
-        <td>Majd Sabaa Ayoun</td>
-        <td>Mariam Nakouzi</td>
-        <td>Maya Bsat</td>
-    </tr>
-    <tr>
-        <td>Mazen Sabeh Ayoun</td>
-        <td>Mhamd Jomaa</td>
-        <td>Mia El Bsat</td>
-    </tr>
-    <tr>
-        <td>Mira Akoum</td>
-        <td>Mohamad Sabeh Ayoun</td>
-        <td>Mohamad Dib</td>
-    </tr>
-    <tr>
-        <td>Mohammad Moukhalaty</td>
-        <td>Mohammad Barakat</td>
-        <td>Mohammad Jaafil</td>
-    </tr>
-    <tr>
-        <td>Moustafa Idriss</td>
-        <td>Moustafa Al Bizri</td>
-        <td>Mustapha Chamselldeen</td>
-    </tr>
-    <tr>
-        <td>Nader Danab</td>
-        <td>Nagham Al Jbeili</td>
-        <td>Omar Al Bizri</td>
-    </tr>
-    <tr>
-        <td>Rabieh Dimassi</td>
-        <td>Rajaa Jubaily</td>
-        <td>Rama El Dimassi</td>
-    </tr>
-    <tr>
-        <td>Rawad Al Bizri</td>
-        <td>Rayan Habli</td>
-        <td>Samia El Nakouzi</td>
-    </tr>
-    <tr>
-        <td>Serena Kassab</td>
-        <td>Yousef Abbass</td>
-        <td>Youssef Al Baalbaki</td>
-    </tr>
-    <tr>
-        <td>Youssef Al Zein</td>
-        <td></td>
-        <td></td>
-    </tr>
+     <tr><td>Abdul Ghani El Bizri</td></tr>
+    <tr><td>Afif Al Baalbaki</td></tr>
+    <tr><td>Ahmad Fneich</td></tr>
+    <tr><td>Ahmad Shaaban</td></tr>
+    <tr><td>Ahmad El Hariri</td></tr>
+    <tr><td>Alaa Joumaa</td></tr>
+    <tr><td>Ali Jardali</td></tr>
+    <tr><td>Ali Sabbagh</td></tr>
+    <tr><td>Ali Alameh</td></tr>
+    <tr><td>Amjad Arkadan</td></tr>
+    <tr><td>Bahaa Shams El Deen</td></tr>
+    <tr><td>Dana Al Halabi</td></tr>
+    <tr><td>Ezzeddine Bsat</td></tr>
+    <tr><td>Fadl El Soloh</td></tr>
+    <tr><td>Farah Al Sabbagh</td></tr>
+    <tr><td>Fatima Al Mokaddem</td></tr>
+    <tr><td>Fatima Charara</td></tr>
+    <tr><td>Hadi Traboulsi</td></tr>
+    <tr><td>Hani Hamade</td></tr>
+    <tr><td>Hasan Fneich</td></tr>
+    <tr><td>Hassan Alloul</td></tr>
+    <tr><td>Hussein Berjawi</td></tr>
+    <tr><td>Isam El Bsat</td></tr>
+    <tr><td>Jad Sabeh Ayoun</td></tr>
+    <tr><td>Jana Sabeh Ayoun</td></tr>
+    <tr><td>Kholoud Al Makari</td></tr>
+    <tr><td>Mahmoud Daibes</td></tr>
+    <tr><td>Majd Sabaa Ayoun</td></tr>
+    <tr><td>Mariam Nakouzi</td></tr>
+    <tr><td>Maya Bsat</td></tr>
+    <tr><td>Mazen Sabeh Ayoun</td></tr>
+    <tr><td>Mhamd Jomaa</td></tr>
+    <tr><td>Mia El Bsat</td></tr>
+    <tr><td>Mira Akoum</td></tr>
+    <tr><td>Mohamad Sabeh Ayoun</td></tr>
+    <tr><td>Mohamad Dib</td></tr>
+    <tr><td>Mohammad Moukhalaty</td></tr>
+    <tr><td>Mohammad Barakat</td></tr>
+    <tr><td>Mohammad Jaafil</td></tr>
+    <tr><td>Moustafa Idriss</td></tr>
+    <tr><td>Moustafa Al Bizri</td></tr>
+    <tr><td>Mustapha Chamselldeen</td></tr>
+    <tr><td>Nader Danab</td></tr>
+    <tr><td>Nagham Al Jbeili</td></tr>
+    <tr><td>Omar Al Bizri</td></tr>
+    <tr><td>Rabieh Dimassi</td></tr>
+    <tr><td>Rajaa Jubaily</td></tr>
+    <tr><td>Rama El Dimassi</td></tr>
+    <tr><td>Rawad Al Bizri</td></tr>
+    <tr><td>Rayan Habli</td></tr>
+    <tr><td>Samia El Nakouzi</td></tr>
+    <tr><td>Serena Kassab</td></tr>
+    <tr><td>Yousef Abbass</td></tr>
+    <tr><td>Youssef Al Baalbaki</td></tr>
+    <tr><td>Youssef Al Zein</td></tr>
 
 </table>
 
-<img src="images/DM_Camp.png" alt="Logo">
-
-</div>
-
 </body>
 </html>
+
 
 
 
