@@ -8,50 +8,59 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background: url("images/Camp_Collage.png") no-repeat center center fixed;
-        background-size: cover;
-        background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
-        background-blend-mode: darken;
+        background-color: #d32f2f;
         color: white;
         margin: 0;
-        padding: 40px 20px;
+        padding: 20px;
         text-align: center;
     }
 
     h1, h2 {
         margin-bottom: 20px;
-        text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    img {
+        max-width: 150px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 8px solid white; /* wider border */
     }
 
     table {
-        width: 40%;
+        width: 40%; /* narrower table */
         margin: 0 auto;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
-        background-color: rgba(255, 255, 255, 0.92);
+        background-color: #f5f5f5;
         color: black;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     th, td {
         padding: 12px 20px;
-        text-align: left;
+        text-align: center; /* centered names */
     }
 
     th {
         background-color: #e0e0e0;
+        font-size: 18px;
     }
 
     tr:nth-child(even) {
         background-color: #ffffff;
     }
-</style>
-</head>
 
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+</style>
+
+</head>
 <body>
 
 <h1>Lebanese Red Cross</h1>
+<img src="images/DM_Camp.png" alt="Logo">
 <h2>Disaster Management Team</h2>
 
 <table>
@@ -119,4 +128,3 @@
 
 </body>
 </html>
-
