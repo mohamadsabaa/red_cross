@@ -12,34 +12,35 @@
         color: white;
         margin: 0;
         padding: 20px;
-        text-align: center;
+        text-align: center; /* keeps titles centered */
     }
 
     h1, h2 {
         margin-bottom: 20px;
     }
 
-    img {
-        max-width: 500px;
-        margin-bottom: 60px;
-        border-radius: 10px;
-        border: 4px solid white; /* wider border */
+    /* Container for image + table */
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 30px;
     }
 
+    /* Left side table */
     table {
-        width: 30%; /* narrower table */
-        margin: 0 auto;
+        width: 40%;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
         background-color: #f5f5f5;
         color: black;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        text-align: left;
     }
 
     th, td {
         padding: 12px 20px;
-        text-align: center; /* centered names */
     }
 
     th {
@@ -54,14 +55,22 @@
     tr:hover {
         background-color: #f1f1f1;
     }
+
+    /* Right side image */
+    img {
+        max-width: 400px;
+        border-radius: 10px;
+        border: 4px solid white;
+    }
 </style>
 
 </head>
 <body>
 
 <h1>Lebanese Red Cross</h1>
-<img src="images/DM_Camp.png" alt="Logo">
 <h2>Disaster Management Team</h2>
+
+<div class="content">
 
 <table>
     <tr>
@@ -128,6 +137,7 @@
 
 </body>
 </html>
+
 
 
 
